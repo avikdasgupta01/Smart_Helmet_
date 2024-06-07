@@ -13,11 +13,11 @@ I'm a Software Engineer with intrests in IOT projects.
 
 ## Screenshots
 
-![](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.25.59.jpeg)
+![1](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.25.59.jpeg)
 
-![](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.26.16.jpeg)
+![2](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.26.16.jpeg)
 
-![](Snapshots/SOFTWARE/WhatsApp Image 2024-05-16 at 19.24.19.jpeg)
+![3](Snapshots/SOFTWARE/WhatsApp Image 2024-05-16 at 19.24.19.jpeg)
 
 ## Acknowledgements
 
