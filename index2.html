@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realtime db</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class ='datacontainer'>
+        <div class ='data-item'>
+            <h2>crash
+                 alert</h2>
+            <p class="value " id="tempreading">Normal</p>
+        </div>
+        <div class='data-item'>
+            <h2>temp</h2>
+            <p class="value" id="temperate">22 &#8451</p>    
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBnPSTxzWnXmOfkC1t3eikpw8oxy-NAtOQ",
+          authDomain: "smart-helmet-23b25.firebaseapp.com",
+          databaseURL: "https://smart-helmet-23b25-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "smart-helmet-23b25",
+          storageBucket: "smart-helmet-23b25.appspot.com",
+          messagingSenderId: "592629352344",
+          appId: "1:592629352344:web:f1c7e14b3dbadcbf710ded",
+          measurementId: "G-H9SNHLJR3W"
+        }
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig)
+
+        // getting reference to the database
+        const database = getDatabase(app)
+
+        // getting reference to the data we want
+        const dataRef1 = ref(database, 'Data/ACCIDENT ALERT')
+        const dataRef2 = ref(database, 'Data/Temperature in C')
+
+        // fetch the data
+        onValue(dataRef1, (getdata1) => {
+            const readtemp = getdata1.val()
+            document.getElementById('tempreading').innerHTML = readtemp
+        })
+
+        onValue(dataRef2, (getdata2) => {
+            const temp = getdata2.val()
+            document.getElementById('temperate').innerHTML = temp + "&#8451;"
+        })
+      </script>
+
+     <div id="location">
+        <button type="submit" class="btn" id="submit" onclick="getLocation()">Location</button>
+
+      </div>
+     <script>
+      function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                document.getElementById("location").innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+
+        function showPosition(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            var googleMapsUrl = `https://www.google.com/maps?q=${lat},${lon}`;
+            document.getElementById("location").innerHTML = `Latitude: ${lat} <br>Longitude: ${lon} <br><a href="${googleMapsUrl}" target="_blank">Open in Google Maps</a>`;
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById("location").innerHTML = "User denied the request for Geolocation."
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById("location").innerHTML = "Location information is unavailable."
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById("location").innerHTML = "The request to get user location timed out."
+                    break;
+                case error.UNKNOWN_ERROR:
+                    document.getElementById("location").innerHTML = "An unknown error occurred."
+                    break;
+            }
+        }
+      </script>
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+     <script src="script2.js"></script>
+    </div> 
+
+</body>
+</html

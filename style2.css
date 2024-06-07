@@ -1,0 +1,57 @@
+   body{
+    background-color: rgb(19,19,19);
+   }
+    @font-face {
+        font-family:newhead;
+        src: url(Heading-Pro-Wide-ExtraBold-trial.ttf);
+    }
+    @font-face {
+        font-family:newhead2;
+        src: url(NeuethingSans-Bold.ttf);
+    }
+
+    h2{
+    
+        /* background-color:rgb(12, 12, 12); */
+        
+        /* min-height: 20vh; */
+        /* padding-left: 90vh; */ 
+        padding-top: 50px;
+        font-family:newhead;
+        text-transform: uppercase;
+        font-size: 3vw;
+        text-align: center;
+        color: antiquewhite;
+       
+       
+        
+    
+     
+        
+    }
+    p{
+        font-family: newhead2;
+        text-transform: uppercase;
+        font-size: 3vw;
+        text-align: center;
+        color:  #dd0909;
+    }
+    #location {
+        padding: 40px 100px 100px 550px;
+        background-color: rgb(19,19,19);
+        font-family: newhead2;
+    }
+    #location .btn{
+        width: 400px;
+        height: 100px;
+        background: antiquewhite;
+        border: none;
+        outline: none;
+        border-radius: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 40px;
+        color :rgb(19, 19, 19);
+        font-weight: 600;
+         
+    }

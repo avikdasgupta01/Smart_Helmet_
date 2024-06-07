@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:forming;
+    src: url(NeuethingSans-Bold.ttf)
+}    
+@font-face {
+    font-family:Heading ;
+    src: url(Heading-Pro-Wide-ExtraBold-trial.ttf);
+}
+#page1 h1{
+    
+    /* background-color:rgb(12, 12, 12); */
+    
+    /* min-height: 20vh; */
+    /* padding-left: 90vh; */ 
+    font-family:Heading;
+    text-transform: uppercase;
+    font-size: 6vw;
+    text-align: center;
+    color: rgb(250, 235, 215);
+
+    
+}
+#page1 h2{
+    /* min-height:20vh; */
+    /* background-color:rgb(12, 12, 12); */
+    
+    /* width: 100vw; */
+    /* padding-top: 20vh;
+     padding-left: 50vh; */ 
+    font-family:Heading;
+    text-transform: uppercase;
+    font-size:  vw;
+    color: #de0101;
+    text-align: center;
+    
+}
+#page1 {
+    min-height: 100vh;
+    background-color: rgb(19, 19, 19);
+    /* position: relative; */
+    width: 100%;
+    /* padding: 1vh 1vw;  */
+    padding-top: 20vh; 
+
+}
+#page2 {
+    min-height: 100vh;
+    background-color: rgb(19, 19, 19);
+    /* position: relative; */
+    width: 100%;
+    /* padding: 1vh 1vw;  */
+    padding-top: 20vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+
+}
+.wrapper{
+    
+    width: 420px;
+    background: #dd0909;
+    color: rgb(250, 235, 215);
+    border-radius: 20px;
+    padding: 30px 40px;
+    background: transparent;
+    border: 2px solid rgba(220, 220, 220, 0.1);
+    font-family:forming;
+}
+.wrapper h1{
+    color: rgb(250, 235, 215);
+    font-size: 40px;
+    text-align: center;
+
+}
+.wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    position: relative;
+   
+    margin: 30px 0;
+}
+ .input-box input{ 
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: antiquewhite;;
+    padding: 20px 45px 20px 20px;
+
+} 
+ .input-box input::placeholder{
+    color:antiquewhite;
+} 
+
+ .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: antiquewhite;
+    
+   
+} 
+.wrapper .remember-fotgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+}
+.remember-fotgot label input{
+    accent-color: antiquewhite;
+    margin-right: 3px;
+}
+
+.remember-fotgot a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.remember-fotgot a:hover{
+    text-decoration: underline;
+
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: antiquewhite;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color :rgb(19, 19, 19);
+    font-weight: 600;
+     
+}
+.wrapper .registelink{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+.working{
+    background-color:rgb(19, 19, 19);
+    
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-right: 20%;
+    text-align: center;
+    
+    
+    
+}
+.working h1{
+    font-family:heading ;
+    padding-top: 5%;
+    color: antiquewhite;
+    font-size: 50px;
+    position: relative;
+    
+}
+
+.working h2{
+    font-family: forming;
+    color: #de0101;
+}
+.working i{
+    color: antiquewhite;
+    font-size: 30px;
+    padding: 10px 0px 10px 5px;
+}
+.registelink p a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 600;
+}
+.registelink p a:hover{
+    text-decoration: underline;
+
+}
+
+#nav{
+    height: 70px;
+    width:  100%;
+    background-color: rgb(19,19,19);
+    position: fixed;
+    z-index: 99;}
+    
+ #links a {
+    text-transform: uppercase;
+    font-family: Heading;
+
+    text-decoration: none;
+    color:rgb(250, 235, 215);
+    font-weight: 500;
+    font-size: 14px;
+    margin: 20px 20px;
+    padding-left: 315px;
+    
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links a:hover{
+    color: #dd0909;
+    transition: all ease 0.3s;
+    transition-delay:0.1s;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 7vw;
+    position: relative;
+}
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#aboutsec{
+    background-color: rgb(19,19,19);
+    min-height: 100vh;
+    width: 100%;
+    
+}
+#about{
+    background-color:rgb(19, 19, 19);
+    padding: 100px 100px 50px 50px;
+}
+
+#about h1{
+    color: antiquewhite;
+    padding-top: 500px;
+    padding-left: 78px;
+
+    text-align: center;
+    font-size: 60px;
+    font-family: forming;
+}
+#about h2{
+    color: antiquewhite;
+    padding-top: 20px;
+    padding-left: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-family: forming;
+} 
+#about h2:hover{
+    color: #dd0909;
+    transition: all ease 0.3s;
+    transition-delay:0.1s;
+}
+#page3{
+    min-height: 60vh;
+    background-color: rgb(19, 19, 19);
+    /* position: relative; */
+    width: 100%;
+    /* padding: 1vh 1vw;  */
+     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    font-family: heading;
+
+}
+#page3 h1{
+    color: antiquewhite;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 60px;
+    
+}
+#page3 h1:hover{
+    color: #dd0909;
+    transition: all ease 0.3s;
+    transition-delay:0.1s;
+}
+#page3 a{
+    text-decoration: none;
+    
+}
+#page3 .elem{
+    /* height: 100%; */
+    /* width: 30%; */
+    /* background-color: red; */
+    /* height: 400px;
+    width: 300px; */
+    height: auto;
+    width: auto;
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+#page3 .elem img {
+    height: 100%;
+    width: 30%;
+    object-fit: cover;
+    scale: 1.1;
+    
+}
+
+

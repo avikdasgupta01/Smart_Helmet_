@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart helmet </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    
+
+</head>
+<body>
+    <nav>
+     <div id = "nav">
+        <div id ="links">
+            <a href=""  class="nav-link">Home</a>
+            <a href="" class="nav-link">Login</a>
+            <a href ="/index2.html" class="nav-link">Data</a>
+            
+       </div>
+       
+     </div> 
+    </nav>
+    <div id="mainreal">
+     <section id = "Home">
+      <div id ="main">
+        
+        <div id="page1">
+            
+            <h1> Smart<br>helmet<br></h1>
+            
+            <h2>for heat detection and crash detection</h2>
+            <div id="video-container">
+                <!-- Video will be loaded here -->
+                <video  autoplay muted loop  src="./Blog-video_crash_pulse_3_with_airbag.mp4" ></video>
+            </div>
+            
+           
+        </div>
+
+        </div>
+      </section>
+
+       <section id = "login">
+        <div id="page2">
+
+            <div class="working">
+                <h1>Why work with us?</h1>
+                <br>
+                <i class='bx bx-target-lock' ></i>
+                <h2>High accuracy</h2>
+                <br>
+                <i class='bx bxs-check-shield' ></i>
+                <h2>On-device and real-time</h2>
+                <br>
+                <i class='bx bxs-bell-ring' ></i>
+                <h2>Detect high-impact crashes</h2>
+
+
+            </div>
+            
+            <div class = "wrapper">
+                <form action="">
+                    <h1> Login</h1>
+                    <div class="input-box">
+                        <input type ="text" id="username" placeholder="username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class ="input-box">
+                        <input type ="password" id="password" placeholder="password" required>
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+
+                    <div class="remember-fotgot">
+                        <label>
+                            <input type ="checkbox"> Remember me 
+                        </label>
+                        <a href="#"> Forgot password ?</a>
+                        
+                    </div>
+                    <button type="submit" class="btn" id="submit">Login</button>
+                    <div class="registelink">
+                        <p>Don't have and account? <a href="#">Register</a></p>
+
+                    </div>
+                </form>
+            </div>  
+            
+            
+          
+        </div>
+        </section>
+        <!-- <section id="about">
+            <br>
+            <h2>The project involves developing a smart helmet equipped with heat and crash detection systems. Using thermal sensors, the helmet monitors the wearer's temperature, alerting them to potential heat-related risks. Integrated crash sensors detect impacts, triggering automatic emergency notifications to predefined contacts. This enhances rider safety through real-time health monitoring and rapid accident response.</h2>
+        </section> -->
+
+        
+        
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+        <script type="module">
+
+
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+
+     const firebaseConfig = {
+     apiKey: "AIzaSyBnPSTxzWnXmOfkC1t3eikpw8oxy-NAtOQ",
+     authDomain: "smart-helmet-23b25.firebaseapp.com",
+     databaseURL: "https://smart-helmet-23b25-default-rtdb.asia-southeast1.firebasedatabase.app",
+     projectId: "smart-helmet-23b25",
+     storageBucket: "smart-helmet-23b25.appspot.com",
+     messagingSenderId: "592629352344",
+     appId: "1:592629352344:web:f1c7e14b3dbadcbf710ded",
+      measurementId: "G-H9SNHLJR3W"
+     };
+
+     const app = initializeApp(firebaseConfig);
+     const analytics = getAnalytics(app);
+
+     const db = getDatabase(app);
+
+     document.getElementById("submit").addEventListener('click', function(e) {
+     e.preventDefault();
+      const username = document.getElementById("username").value;
+//   const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+     set(ref(db, 'user/' + username), {
+     name: username,
+    // email: email,
+    // Do not store passwords in plain text!
+     password: password,
+     });
+     alert("Login succesfull");
+     });
+
+
+        </script>
+        
+        
+        <!-- <div id="map"><script src="script.js"></script></div> -->
+          
+       <div id="page3">
+         <div id="elem1" class="elem">
+            <a  target="_blank"  href="PROJECT REPORT Smart helmet (1).pdf"><h1>Documentaion</h1></a>
+            <!-- <img src="D360_Blog_Do_You_Really_Need_Document_Management_Software-01-scaled.jpg"> -->
+            
+         </div>
+        <div id="elem2" class="elem">
+            <a target="_blank" href="Revolutionizing-Safety-for-Construction-Workers (1).pptx">
+                <h1>Presentation</h1>
+            </a>
+            <!-- <img src="business-presentation-concept-with-man-give-presentation-with-data-graph-analysis-on-white-board-free-vector.jpg"> -->
+         </div>
+         <div id="elem3" class="elem">
+            <h1>Protoytype</h1>
+             <!-- <img src="istockphoto-1194096602-612x612.jpg"> -->
+         </div>
+      
+       </div>
+
+       <div class="aboutsec">
+        <section id="about">
+            <h1>About</h1>
+            
+            <h2>The project involves developing a smart helmet equipped with heat and crash detection systems. Using thermal sensors, the helmet monitors the wearer's temperature, alerting them to potential heat-related risks. Integrated crash sensors detect impacts,
+                 triggering automatic emergency notifications to predefined contacts. This enhances rider safety through real-time health monitoring and rapid accident response.</h2>
+        </section> 
+       </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
