@@ -13,11 +13,11 @@ I'm a Software Engineer with intrests in IOT projects.
 
 ## Screenshots
 
-![](https://drive.google.com/file/d/1lnBNKZZmzMJbYA_PjkTRPlOgxcrVtMMI/view?usp=drive_link)
+![](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.25.59.jpeg)
 
-![](https://drive.google.com/file/d/1EnGiH8T2Jz2hW1CwYP54XsrZFhhOU_ck/view?usp=sharing)
+![](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.26.16.jpeg)
 
-
+![](Snapshots/SOFTWARE/WhatsApp Image 2024-05-16 at 19.24.19.jpeg)
 
 ## Acknowledgements
 
