@@ -8,7 +8,7 @@ Smart Helmet used to detect the possibility of heat strokes and possibility of F
   
 ## Screenshots
 
-![]([https://drive.google.com/file/d/1lnBNKZZmzMJbYA_PjkTRPlOgxcrVtMMI/view?usp=drive_link](https://github.com/avikdasgupta01/smart_helmet_/blob/master/Snapshots/HELMET/WhatsApp%20Image%202024-05-13%20at%2023.25.59.jpeg))
+
 
 ![App Screenshot](https://github.com/avikdasgupta01/smart_helmet_/blob/master/Snapshots/HELMET/WhatsApp%20Image%202024-05-13%20at%2023.25.59.jpeg)
 
