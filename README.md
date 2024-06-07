@@ -11,14 +11,6 @@ Smart Helmet used to detect the possibility of heat strokes and possibility of F
 I'm a Software Engineer with intrests in IOT projects.
 
 
-## Screenshots
-
-![1](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.25.59.jpeg)
-
-![2](Snapshots/HELMET/WhatsApp Image 2024-05-13 at 23.26.16.jpeg)
-
-![3](Snapshots/SOFTWARE/WhatsApp Image 2024-05-16 at 19.24.19.jpeg)
-
 ## Acknowledgements
 
  - Bergman, M., et al. (2017). Heat stress and heat-related illnesses. American Family Physician, 96(4), 256-262.
