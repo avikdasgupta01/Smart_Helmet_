@@ -12,10 +12,9 @@ Smart Helmet used to detect the possibility of heat strokes and possibility of F
 
 ![Insides of the helmet](https://github.com/avikdasgupta01/smart_helmet_/blob/master/Snapshots/HELMET/WhatsApp%20Image%202024-05-13%20at%2023.25.59.jpeg)
 
-https://github.com/avikdasgupta01/smart_helmet_/blob/master/Snapshots/HELMET/WhatsApp%20Image%202024-05-13%20at%2023.25.59.jpeg
+
 ## 🚀 About Me
 I'm a Software Engineer with intrests in IOT projects.
-https://github.com/avikdasgupta01/smart_helmet_/blob/master/Snapshots/HELMET/WhatsApp%20Image%202024-05-13%20at%2023.25.59.jpeg
 
 ## Acknowledgements
 
